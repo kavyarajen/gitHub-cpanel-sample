@@ -4,3 +4,23 @@
     <input type="file" name="file" />
     <button type="submit">Upload</button>
 </form>
+<style>
+    .upload-btn {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .upload-btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<h2>Upload Your File</h2>
+<form action="upload.php" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <button class="upload-btn" type="submit">Upload File</button>
+</form>
