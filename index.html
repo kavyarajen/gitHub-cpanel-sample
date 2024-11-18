@@ -1,26 +1,66 @@
-<h2>Upload Your Documents</h2>
-<p>Submit your documents to save them to our secure cloud storage.</p>
-<form action="upload.php" method="POST" enctype="multipart/form-data">
-    <input type="file" name="file" />
-    <button type="submit">Upload</button>
-</form>
-<style>
-    .upload-btn {
-        background-color: #007BFF;
-        color: white;
-        padding: 10px 15px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Your Documents</title>
+    <style>
+        /* Center the form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9; /* Light background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            margin: 0;
+        }
 
-    .upload-btn:hover {
-        background-color: #0056b3;
-    }
-</style>
+        form {
+            background-color: #ffffff; /* White background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            text-align: center;
+        }
 
-<h2>Upload Your File</h2>
-<form action="upload.php" method="POST" enctype="multipart/form-data">
-    <input type="file" name="file" />
-    <button class="upload-btn" type="submit">Upload File</button>
-</form>
+        h2 {
+            color: #333; /* Dark text for contrast */
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666; /* Gray text */
+            margin-bottom: 20px;
+        }
+
+        input[type="file"] {
+            margin-bottom: 15px;
+            padding: 5px;
+        }
+
+        button {
+            background-color: #007BFF; /* Blue button */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <h2>Upload Your Documents</h2>
+        <p>Submit your documents to save them to our secure cloud storage.</p>
+        <input type="file" name="file" />
+        <br />
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
