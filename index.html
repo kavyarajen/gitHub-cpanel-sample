@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Upload Your Documents</title>
     <style>
         /* Center the form */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9; /* Light background */
+            background-color: #e0f7fa; /* Light teal background */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -20,39 +18,60 @@
 
         form {
             background-color: #ffffff; /* White background */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow */
             text-align: center;
         }
 
         h2 {
-            color: #333; /* Dark text for contrast */
+            color: #00796b; /* Teal heading */
             margin-bottom: 10px;
         }
 
         p {
-            color: #666; /* Gray text */
+            color: #004d40; /* Dark teal text */
             margin-bottom: 20px;
+            font-size: 14px;
         }
 
         input[type="file"] {
             margin-bottom: 15px;
             padding: 5px;
+            border: 1px solid #00796b; /* Teal border */
+            border-radius: 5px;
+            font-size: 14px;
         }
 
         button {
-            background-color: #007BFF; /* Blue button */
-            color: white;
-            padding: 10px 15px;
+            background-color: #00796b; /* Teal button */
+            color: #ffffff; /* White text */
+            padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            transition: background-color 0.3s ease;
         }
 
         button:hover {
-            background-color: #0056b3; /* Darker blue on hover */
+            background-color: #004d40; /* Darker teal on hover */
+        }
+
+        /* Add a subtle animation to the form */
+        form {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -66,3 +85,4 @@
     </form>
 </body>
 </html>
+
